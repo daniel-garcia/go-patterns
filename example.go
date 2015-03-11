@@ -34,8 +34,7 @@ func (s *Example) Close() {
 	s.wg.Wait()
 }
 
-// run the the body of the example. It is responsible to reacting
-// to the changes in the application, model, and infrastructure.
+// run the the body of the example.
 func (s *Example) run() {
 	defer s.wg.Done()
 	select {
